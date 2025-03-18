@@ -31,7 +31,7 @@ public class Main {
         while(decimal>0) {
             int remainder = decimal % 2;
             binaryList.addFirst(remainder);
-            decimal = decimal % 2;
+            decimal = decimal / 2;
         }
         StringBuilder binaryDigit = new StringBuilder();
         for(int digit : binaryList) {
